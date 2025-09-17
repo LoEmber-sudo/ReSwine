@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3dengine\board.cpp" />
+    <ClCompile Include="3dengine\effects.cpp" />
+    <ClCompile Include="3dengine\gepard.cpp" />
+    <ClCompile Include="3dengine\glow.cpp" />
+    <ClCompile Include="3dengine\group.cpp" />
+    <ClCompile Include="3dengine\mesh.cpp" />
+    <ClCompile Include="3dengine\parcel.cpp" />
+    <ClCompile Include="3dengine\particles.cpp" />
+    <ClCompile Include="3dengine\particles2.cpp" />
+    <ClCompile Include="3dengine\particles3.cpp" />
+    <ClCompile Include="3dengine\particles4.cpp" />
+    <ClCompile Include="3dengine\spline.cpp" />
+    <ClCompile Include="3dengine\terrain.cpp" />
+    <ClCompile Include="3dengine\texture.cpp" />
+    <ClCompile Include="common\options.cpp" />
+    <ClCompile Include="common\swineversion.cpp" />
+    <ClCompile Include="core\core_pch.cpp" />
+    <ClCompile Include="core\logger.cpp" />
+    <ClCompile Include="core\properties.cpp" />
+    <ClCompile Include="core\stream.cpp" />
+    <ClCompile Include="core\timer.cpp" />
+    <ClCompile Include="dxwindow.cpp" />
+    <ClCompile Include="game\ChatRoomMenu.cpp" />
+    <ClCompile Include="game\game.cpp" />
+    <ClCompile Include="game\GameView.cpp" />
+    <ClCompile Include="game\GroupIcon.cpp" />
+    <ClCompile Include="game\ingamemenu.cpp" />
+    <ClCompile Include="game\MainMenu.cpp" />
+    <ClCompile Include="game\market.cpp" />
+    <ClCompile Include="game\menu.cpp" />
+    <ClCompile Include="game\MenuBackgroundView.cpp" />
+    <ClCompile Include="game\Messages.cpp" />
+    <ClCompile Include="game\minimap.cpp" />
+    <ClCompile Include="game\statuspanel.cpp" />
+    <ClCompile Include="game\stdafx.cpp" />
+    <ClCompile Include="game\SuperWindow.cpp" />
+    <ClCompile Include="game\titleroom.cpp" />
+    <ClCompile Include="game\VideoView.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="include\BitStream.cpp" />
+    <ClCompile Include="include\FileList.cpp" />
+    <ClCompile Include="include\LocklessTypes.cpp" />
+    <ClCompile Include="include\NatPunchthroughClient.cpp" />
+    <ClCompile Include="include\PluginInterface2.cpp" />
+    <ClCompile Include="include\RakNetSocket2.cpp" />
+    <ClCompile Include="include\RakNetTypes.cpp" />
+    <ClCompile Include="include\RakWString.cpp" />
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="main3.cpp" />
+    <ClCompile Include="mdec\decode.cpp" />
+    <ClCompile Include="mdec\huffman.cpp" />
+    <ClCompile Include="mdec\hybrid.cpp" />
+    <ClCompile Include="mdec\istream.cpp" />
+    <ClCompile Include="mdec\layer3.cpp" />
+    <ClCompile Include="mdec\subband.cpp" />
+    <ClCompile Include="network\connectionmanager.cpp" />
+    <ClCompile Include="network\landiscovery.cpp" />
+    <ClCompile Include="network\matchmaking.cpp" />
+    <ClCompile Include="network\multi.cpp" />
+    <ClCompile Include="network\upnpgateway.cpp" />
+    <ClCompile Include="platform\gogmanager.cpp" />
+    <ClCompile Include="platform\platform.cpp" />
+    <ClCompile Include="sound\concert.cpp" />
+    <ClCompile Include="window\button.cpp" />
+    <ClCompile Include="window\checkbox.cpp" />
+    <ClCompile Include="window\colorbutton.cpp" />
+    <ClCompile Include="window\credits.cpp" />
+    <ClCompile Include="window\dialog.cpp" />
+    <ClCompile Include="window\droplist.cpp" />
+    <ClCompile Include="window\dxwidget.cpp" />
+    <ClCompile Include="window\editbox.cpp" />
+    <ClCompile Include="window\editboxwithtext.cpp" />
+    <ClCompile Include="window\filelistbox.cpp" />
+    <ClCompile Include="window\inputdialog.cpp" />
+    <ClCompile Include="window\introduction.cpp" />
+    <ClCompile Include="window\label.cpp" />
+    <ClCompile Include="window\listbox.cpp" />
+    <ClCompile Include="window\matchlistbox.cpp" />
+    <ClCompile Include="window\messagebox.cpp" />
+    <ClCompile Include="window\messageboxwithoutbuttons.cpp" />
+    <ClCompile Include="window\playerlistbox.cpp" />
+    <ClCompile Include="window\radiobutton.cpp" />
+    <ClCompile Include="window\saveloadlistbox.cpp" />
+    <ClCompile Include="window\scaler.cpp" />
+    <ClCompile Include="window\SkippableDXWidget.cpp" />
+    <ClCompile Include="window\sliderh.cpp" />
+    <ClCompile Include="window\sliderv.cpp" />
+    <ClCompile Include="window\splash.cpp" />
+    <ClCompile Include="window\textbox.cpp" />
+    <ClCompile Include="window\textbutton.cpp" />
+    <ClCompile Include="window\tipdialog.cpp" />
+    <ClCompile Include="window\widget.cpp" />
+    <ClCompile Include="window\window.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="world\campaign.cpp" />
+    <ClCompile Include="world\gameworld.cpp" />
+    <ClCompile Include="world\projectile.cpp" />
+    <ClCompile Include="world\trigger.cpp" />
+    <ClCompile Include="world\unit.cpp" />
+    <ClCompile Include="world\unitstore.cpp" />
+    <ClCompile Include="world\world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3dengine\board.h" />
+    <ClInclude Include="3dengine\effects.h" />
+    <ClInclude Include="3dengine\gepard.h" />
+    <ClInclude Include="3dengine\glow.h" />
+    <ClInclude Include="3dengine\group.h" />
+    <ClInclude Include="3dengine\mesh.h" />
+    <ClInclude Include="3dengine\particles.h" />
+    <ClInclude Include="3dengine\particles2.h" />
+    <ClInclude Include="3dengine\particles3.h" />
+    <ClInclude Include="3dengine\particles4.h" />
+    <ClInclude Include="3dengine\spline.h" />
+    <ClInclude Include="3dengine\stb_image.h" />
+    <ClInclude Include="3dengine\terrain.h" />
+    <ClInclude Include="3dengine\texture.h" />
+    <ClInclude Include="antialiasingmode.h" />
+    <ClInclude Include="common\options.h" />
+    <ClInclude Include="common\swineversion.h" />
+    <ClInclude Include="core\chaos\array.h" />
+    <ClInclude Include="core\chaos\math.h" />
+    <ClInclude Include="core\chaos\matrix4.h" />
+    <ClInclude Include="core\chaos\plane.h" />
+    <ClInclude Include="core\chaos\quaternion.h" />
+    <ClInclude Include="core\chaos\transform.h" />
+    <ClInclude Include="core\chaos\vector2.h" />
+    <ClInclude Include="core\chaos\vector3.h" />
+    <ClInclude Include="core\core_common.h" />
+    <ClInclude Include="core\core_pch.h" />
+    <ClInclude Include="core\darray.h" />
+    <ClInclude Include="core\logger.h" />
+    <ClInclude Include="core\properties.h" />
+    <ClInclude Include="core\smartptr.h" />
+    <ClInclude Include="core\srmath.h" />
+    <ClInclude Include="core\stream.h" />
+    <ClInclude Include="core\string2.h" />
+    <ClInclude Include="core\timer.h" />
+    <ClInclude Include="core\utf.h" />
+    <ClInclude Include="dxwindow.h" />
+    <ClInclude Include="game\defs.h" />
+    <ClInclude Include="game\GameView.h" />
+    <ClInclude Include="game\GroupIcon.h" />
+    <ClInclude Include="game\ingamemenu.h" />
+    <ClInclude Include="game\MainMenu.h" />
+    <ClInclude Include="game\market.h" />
+    <ClInclude Include="game\menu.h" />
+    <ClInclude Include="game\MenuBackgroundView.h" />
+    <ClInclude Include="game\Messages.h" />
+    <ClInclude Include="game\minimap.h" />
+    <ClInclude Include="game\statuspanel.h" />
+    <ClInclude Include="game\stdafx.h" />
+    <ClInclude Include="game\SuperWindow.h" />
+    <ClInclude Include="game\titleroom.h" />
+    <ClInclude Include="game\videoview.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="include\BitStream.h" />
+    <ClInclude Include="include\DS_Map.h" />
+    <ClInclude Include="include\FileList.h" />
+    <ClInclude Include="include\FileListNodeContext.h" />
+    <ClInclude Include="include\FileListTransferCBInterface.h" />
+    <ClInclude Include="include\LocklessTypes.h" />
+    <ClInclude Include="include\NatPunchthroughClient.h" />
+    <ClInclude Include="include\PluginInterface2.h" />
+    <ClInclude Include="include\RakNetSmartPtr.h" />
+    <ClInclude Include="include\RakNetSocket2.h" />
+    <ClInclude Include="include\RakNetTypes.h" />
+    <ClInclude Include="include\RakPeerInterface.h" />
+    <ClInclude Include="include\RakString.h" />
+    <ClInclude Include="include\RakWString.h" />
+    <ClInclude Include="include\ThreadPool.h" />
+    <ClInclude Include="main2.h" />
+    <ClInclude Include="mdec\headers.h" />
+    <ClInclude Include="network\connectionmanager.h" />
+    <ClInclude Include="network\landiscovery.h" />
+    <ClInclude Include="network\matchmaking.h" />
+    <ClInclude Include="network\multi.h" />
+    <ClInclude Include="network\upnpgateway.h" />
+    <ClInclude Include="platform\platform.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sound\concert.h" />
+    <ClInclude Include="UserEventProp.h" />
+    <ClInclude Include="window\antialiasingmode.h" />
+    <ClInclude Include="window\button.h" />
+    <ClInclude Include="window\checkbox.h" />
+    <ClInclude Include="window\colorbutton.h" />
+    <ClInclude Include="window\credits.h" />
+    <ClInclude Include="window\dialog.h" />
+    <ClInclude Include="window\displaymode.h" />
+    <ClInclude Include="window\dxwidget.h" />
+    <ClInclude Include="window\editbox.h" />
+    <ClInclude Include="window\editboxwithtext.h" />
+    <ClInclude Include="window\filelistbox.h" />
+    <ClInclude Include="window\inputdialog.h" />
+    <ClInclude Include="window\introduction.h" />
+    <ClInclude Include="window\label.h" />
+    <ClInclude Include="window\listbox.h" />
+    <ClInclude Include="window\matchlistbox.h" />
+    <ClInclude Include="window\messagebox.h" />
+    <ClInclude Include="window\messageboxwithoutbuttons.h" />
+    <ClInclude Include="window\playerlistbox.h" />
+    <ClInclude Include="window\radiobutton.h" />
+    <ClInclude Include="window\saveloadlistbox.h" />
+    <ClInclude Include="window\scaler.h" />
+    <ClInclude Include="window\sliderh.h" />
+    <ClInclude Include="window\sliderv.h" />
+    <ClInclude Include="window\splash.h" />
+    <ClInclude Include="window\stack.h" />
+    <ClInclude Include="window\textbox.h" />
+    <ClInclude Include="window\textbutton.h" />
+    <ClInclude Include="window\tipdialog.h" />
+    <ClInclude Include="window\widget.h" />
+    <ClInclude Include="window\window.h" />
+    <ClInclude Include="world\campaign.h" />
+    <ClInclude Include="world\gameworld.h" />
+    <ClInclude Include="world\projectile.h" />
+    <ClInclude Include="world\trigger.h" />
+    <ClInclude Include="world\unit.h" />
+    <ClInclude Include="world\unitstore.h" />
+    <ClInclude Include="world\world.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6a008f7d-e204-4286-b774-34795a136e3d}</ProjectGuid>
+    <RootNamespace>ReSwine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
