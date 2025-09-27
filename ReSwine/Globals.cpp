@@ -1,14 +1,13 @@
+#pragma once
 #include "Globals.h"
-#include "common/swineversion.h"
+#include "common/version.h"
 #include "core/logger.h"
 #include "core/timer.h"
 #include "platform/platform.h"
 
 SSuperWindow* SuperWindow = nullptr;
 
-struct {
-    SLogger* g;
-} Logger = { nullptr };
+LoggerStruct Logger{ nullptr };
 
 SVersion* Version = nullptr;
 STimer* Timer = nullptr;

@@ -25,10 +25,7 @@ struct SWindow : SWidget
     int Dpi = 0;
     float Scaling = 1.0f;
     bool shouldClose = false;
-
-    // Constructor / Destructor
     SWindow() = default;
     virtual ~SWindow() = default;
 
-    // Optional helper functions can be added here later
 };

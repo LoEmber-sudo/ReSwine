@@ -296,9 +296,6 @@
     <ClCompile Include="common\options.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
-    <ClCompile Include="common\swineversion.cpp">
-      <Filter>src\common</Filter>
-    </ClCompile>
     <ClCompile Include="3dengine\board.cpp">
       <Filter>src\3dengine</Filter>
     </ClCompile>
@@ -355,6 +352,12 @@
     </ClCompile>
     <ClCompile Include="dxwindow.cpp">
       <Filter>src\window</Filter>
+    </ClCompile>
+    <ClCompile Include="common\version.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="core\string.cpp">
+      <Filter>src\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -637,7 +640,7 @@
     <ClInclude Include="common\options.h">
       <Filter>src\common</Filter>
     </ClInclude>
-    <ClInclude Include="common\swineversion.h">
+    <ClInclude Include="common\version.h">
       <Filter>src\common</Filter>
     </ClInclude>
     <ClInclude Include="3dengine\board.h">
@@ -708,6 +711,12 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>src\important</Filter>
+    </ClInclude>
+    <ClInclude Include="stat.h">
+      <Filter>src\game</Filter>
+    </ClInclude>
+    <ClInclude Include="statID.h">
+      <Filter>src\game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

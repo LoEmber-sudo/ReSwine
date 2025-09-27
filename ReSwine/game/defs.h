@@ -114,6 +114,9 @@ typedef int bool;       // we want to use bool in our C programs
 #define LODWORD(x) DWORDn(x,LOW_IND(x,_DWORD))
 #define HIBYTE(x)  BYTEn(x,HIGH_IND(x,_BYTE))
 #define HIWORD(x)  WORDn(x,HIGH_IND(x,_WORD))
+#ifdef HIWORD
+#undef HIWORD
+#endif
 #define HIDWORD(x) DWORDn(x,HIGH_IND(x,_DWORD))
 #define BYTE1(x)   BYTEn(x,  1)         // byte 1 (counting from 0)
 #define BYTE2(x)   BYTEn(x,  2)

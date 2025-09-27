@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "platform/platform.h"
-#include "common/swineversion.h"
+#include "common/version.h"
 #include "core/logger.h"
 #include "core/timer.h"
 #include "game/defs.h"
@@ -13,38 +13,6 @@
 #include <cstdio>
 #include <cstring>
 #include "main2.h"
-
-
-void SLogger::Log(int loglev, const char* message, ...)
-{
-    if (!Logging || loglev > LogLevel)
-        return;
-
-    char buf[512];
-    char logLine[524];
-
-    va_list args;
-    va_start(args, message);
-    vsnprintf_s(buf, sizeof(buf), message, args);
-    va_end(args);
-
-    if (loglev < 0)
-        snprintf(logLine, sizeof(logLine), "%s\r\n", buf);
-    else
-        snprintf(logLine, sizeof(logLine), "<%d> %s\r\n", loglev, buf);
-
-    if (LogBufferUsed < 512)
-    {
-        strcpy_s(LogBufferContent[LogBufferUsed], sizeof(LogBufferContent[LogBufferUsed]), logLine);
-        LogBufferUsed++;
-    }
-
-
-    if (LogBufferUsed >= 512 || loglev <= 0)
-        WriteBufferToLog();
-
-    OutputDebugStringA(logLine);
-}
 inline void _srand(unsigned int seed) {
     std::srand(seed);
 }
@@ -75,9 +43,13 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, char* lpCmdL
 
     // Version info
     Version = new SVersion();
-    SString versionString = Version->GetLongString();
+    SString versionString{};
+    versionString.buf = nullptr;
+    versionString.size = 0;
+    Version->GetLongString(&versionString);
 
-    // Build app name string
+
+
     char appNameStr[1024];
     const char* appName = versionString.buf ? versionString.buf : fullpath;
     sprintf_s(appNameStr, sizeof(appNameStr), "Application name: %s game", appName);
@@ -93,20 +65,13 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, char* lpCmdL
     // Timer
     Timer = new STimer();
 
-    // Platform + COM
+
     CoInitializeEx(nullptr, 0);
-    g_Platform = new SPlatform();
-    g_Platform->Initialize();
 
     // Run game main loop
     main2();
 
     // Cleanup
-    if (g_Platform) {
-        delete g_Platform;
-        g_Platform = nullptr;
-    }
-
     if (Timer) {
         delete Timer;
         Timer = nullptr;

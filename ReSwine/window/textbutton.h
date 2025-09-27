@@ -1,5 +1,5 @@
 #include "dxwidget.h"  // base class
-#include "../common/swineversion.h" // SString
+#include "../common/version.h" // SString
 struct STextButton : SDXWidget
 {
 	int Font;

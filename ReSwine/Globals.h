@@ -6,9 +6,12 @@
 
 // Global instances
 extern SSuperWindow* SuperWindow;
-extern struct {
+struct LoggerStruct {
     SLogger* g;
-} Logger;
+};
+extern LoggerStruct Logger;
+
+
 
 extern STimer* Timer;
 extern SPlatform* g_Platform;
