@@ -1,6 +1,6 @@
 Im reverse engineering swineHD remaster  
-Working stuff  
-WinMain.cpp (main  
+Working stuff:  
+WinMain.cpp (main)  
 version.cpp  
 version.h  
 SuperWindow.h  
